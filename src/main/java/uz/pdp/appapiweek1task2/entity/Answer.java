@@ -15,10 +15,10 @@ public class Answer {
     @Column
     private String text;
 
-    @OneToOne
+    @ManyToOne
     private Task task;
 
-    @OneToOne
+    @ManyToOne
     private User user;
 
     @Column
